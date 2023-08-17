@@ -5,8 +5,7 @@ export const header = {
     const headerContainer = document.createElement("div");
     document.body.appendChild(headerContainer);
     headerContainer.classList.add("header");
-    headerContainer.textContent = "header";
-
+    
     const menuTitles = ["Main", "Info", "About", "Contact Us"];
 
     menuTitles.forEach((value) => {
@@ -14,6 +13,7 @@ export const header = {
       document.body.append(menuElement);
       headerContainer.appendChild(menuElement);
       menuElement.textContent = value;
+      menuElement.classList.add("menuItem");
     });
   },
 };
