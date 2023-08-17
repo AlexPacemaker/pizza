@@ -1,3 +1,3 @@
-import { header } from "./src/components/header.js";
+import { header } from "./src/components/Header/header.js";
 
 header.output();
